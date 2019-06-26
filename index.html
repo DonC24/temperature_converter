@@ -4,7 +4,13 @@
   </head>
   <body>
     <p>temperature converter</p>
-    <input class="starter" id="input" placeholder="input"/>
+    <input class="starter" id="input" placeholder="input temperature"/>
+<!--     <p>This is in <select name="units">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+    </select></p> -->
+
     <h2>output:</h2>
     <p class="starter" id="output"></p>
     <script>
@@ -12,6 +18,8 @@
         var currentInput = event.target.value;
         inputHappened(currentInput)
       });
+      //document.querySelector('#units').addEventListener()
+
 
       var display = function( data ){
         var output = document.querySelector('#output');
